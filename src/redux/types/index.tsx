@@ -1,0 +1,3 @@
+export const SIGNUP_SUCCESS = "SIGNUP_SUCCESS";
+export const SIGNOUT = "SIGNOUT"
+export const SIGNIN_SUCCESS = "SIGNIN_SUCCESS";
