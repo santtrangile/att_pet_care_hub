@@ -6,7 +6,6 @@
 // import { Navigate } from "react-router";
 // import CountryDetail from "../pages/CountryDetail";
 
-import { Navigate } from "react-router-dom";
 import Home from "../pages/home";
 
 // const userMenu = [

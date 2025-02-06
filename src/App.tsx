@@ -1,17 +1,7 @@
 import { Routes, Route } from "react-router-dom";
-import { JSX } from "react";
 import { connect } from "react-redux";
 import { RootState } from "./redux/store";
 import { routeData } from "./routes/Routes";
-
-interface RouteInterface {
-  path: string;
-  element: JSX.Element;
-  nestedRoutes?: {
-    path: string;
-    element: JSX.Element;
-  }[];
-}
 
 const App = () => {
 
