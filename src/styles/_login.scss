@@ -16,7 +16,7 @@
         padding: 20px;
         border: 2px solid $fc-green;
         border-radius: 10px;
-        background-color: rgba(0, 0, 0, 0.5);
+        background-color: rgba(0, 0, 0, 0.7);
         box-shadow: $fc-green-box-shadow;
         .top-container {
             display: flex;
@@ -24,7 +24,7 @@
             gap: 20px;
             width: 100%;
             > .logo {
-                background-image: url("../../public/favicon.ico");
+                background-image: url("../../public/logo.png");
                 background-size: contain;
                 background-repeat: no-repeat;
                 background-position: center;
@@ -89,7 +89,11 @@
         }
         &.signup {
             .container {
+                border-radius: 0;
                 padding: 15px 20px;
+                .top-container {
+                    gap: 10px;
+                }
             }
         }
     }

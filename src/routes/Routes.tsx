@@ -7,7 +7,8 @@
 // import CountryDetail from "../pages/CountryDetail";
 
 import Home from "../pages/home";
-import Login from './../pages/login';
+import Login from "../pages/login";
+import Signup from "../pages/signup";
 
 // const userMenu = [
 //   {
@@ -36,6 +37,10 @@ export const routeData = [
     {
       path: "/login",
       element: <Login/>
+    },
+    {
+      path: "/signup",
+      element: <Signup/>
     }
     // {
     //   path: "/Login",
