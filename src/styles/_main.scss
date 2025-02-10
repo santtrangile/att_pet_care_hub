@@ -4,7 +4,7 @@
 @import "./_input.scss";
 @import "./_socialMedia.scss";
 @import "./_login.scss";
-
+@import "./_dashboard.scss";
 
 body {
     margin: 0;
@@ -18,7 +18,7 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    background-color: red;
+    background-color: $fc-white;
 
     .content-body {
         flex: 1;
@@ -68,4 +68,9 @@ a {
     &:hover {
         color: $fc-light-green;
     }
+}
+
+h1 {
+    margin: 0;
+    color: $fc-white;
 }

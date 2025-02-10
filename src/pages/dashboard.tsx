@@ -1,6 +1,8 @@
+import { useNavigate } from 'react-router-dom';
 import Button from '../components/Button'
 
 const Dashboard = () => {
+  const navigate = useNavigate();
   return (
     <div className='dashboard-wrapper'>
         <div className='landing-wrapper'>
@@ -10,7 +12,7 @@ const Dashboard = () => {
             <p>
                 Your one-stop solution for all things pet-related, with a twist!
             </p>
-            <Button label='Join Us'/>
+            <Button label='Join Us' onClick={() => navigate("/login")}/>
         </div>
     </div>
   )
