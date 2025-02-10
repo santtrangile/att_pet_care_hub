@@ -6,6 +6,7 @@
 // import { Navigate } from "react-router";
 // import CountryDetail from "../pages/CountryDetail";
 
+import Dashboard from "../pages/dashboard";
 import Home from "../pages/home";
 import Login from "../pages/login";
 import Signup from "../pages/signup";
@@ -28,11 +29,18 @@ import Signup from "../pages/signup";
 //   },
 // ];
 
+const userRoutes = [
+  {
+    path: "/",
+    element: <Dashboard />
+  }
+]
+
 export const routeData = [
     {
       path: "/",
       element: <Home />,
-      // nestedRoutes: isAdmin === "true" ? adminMenu : userMenu,
+      nestedRoutes: userRoutes,
     },
     {
       path: "/login",

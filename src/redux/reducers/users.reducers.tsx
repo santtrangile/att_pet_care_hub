@@ -6,10 +6,9 @@ interface Action {
 }
 
 const initialState = {
-  isAuthenticated: false,
+  isAuthenticated: true,
 };
-
-export default function users(state = initialState, action: Action) {
+const users = (state = initialState, action: Action) => {
   const { type } = action;
   switch (type) {
     case SIGNIN_SUCCESS:
@@ -26,3 +25,5 @@ export default function users(state = initialState, action: Action) {
       return state;
   }
 }
+
+export default users;
