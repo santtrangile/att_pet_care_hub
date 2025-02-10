@@ -1,0 +1,56 @@
+.header-container {
+    position: fixed;
+    top: 15px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0.6rem;
+    border: 1px solid;
+    border-radius: 3rem;
+    border-color: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(8px);
+    font-size: 1rem;
+    color: $fc-black;
+    z-index: 1;
+    span {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        font-weight: 700;
+        font-size: 1.2rem;
+        img {
+            height: 4rem;
+            min-width: 6rem;
+            object-fit: contain;
+            background: $fc-white;
+            border-radius: 3rem;
+        }
+    }
+    .header-labels {
+        display: flex;
+        gap: 20px;
+        .header-label {
+            text-decoration: none;
+            padding: 15px;
+            transition: 0.3s all;
+            border-radius: 10px;
+            color: $fc-black;
+            &:hover {
+                background-color: rgba(27, 31, 10, 0.06);
+            }
+        }
+    }
+    .button-wrapper {
+        .button {
+            height: 4rem;
+            border-radius: 3rem;
+            font-size: 1.2rem;
+            line-height: 1.5;
+        }
+    }
+}

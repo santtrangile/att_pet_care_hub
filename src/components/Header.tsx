@@ -1,0 +1,29 @@
+import { Link, useNavigate } from 'react-router-dom';
+import Button from './Button';
+
+const Header = () => {
+    const navigate = useNavigate();
+    const headerLabels = [
+        {label: "Home", path: "/"},
+        {label: "Community", path: "/community"},
+        {label: "Shop", path: "/hop"},
+    ]
+    return (
+        <div className='header-container'>
+            <span>
+                <img src='/favicon.ico' alt='Logo'/>
+                Trillionsmed
+            </span>
+            <div className='header-labels'>
+                {headerLabels?.map((item) => {
+                    return (
+                        <Link to={item?.path} className='header-label'>{item?.label}</Link>
+                    )
+                })}
+            </div>
+            <Button label='Get Started' onClick={()=> navigate("/login")}/>
+        </div>
+    )
+}
+
+export default Header

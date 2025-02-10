@@ -1,0 +1,43 @@
+$facebook-bg: #1877f2;
+$facebook-hover: #145dbf;
+$apple-hover: #333;
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 22px;
+
+  &.google {
+    background-color: $fc-white;
+    border: 1px solid $fc-gray;
+
+    &:hover {
+      background-color: darken($fc-white, 5%);
+    }
+  }
+
+  &.facebook {
+    background-color: $facebook-bg;
+    color: $fc-white;
+
+    &:hover {
+      background-color: $facebook-hover;
+    }
+  }
+
+  &.apple {
+    background-color: $fc-black;
+    color: $fc-white;
+
+    &:hover {
+      background-color: $apple-hover;
+    }
+  }
+}

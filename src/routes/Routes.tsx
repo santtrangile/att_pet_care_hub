@@ -7,6 +7,7 @@
 // import CountryDetail from "../pages/CountryDetail";
 
 import Home from "../pages/home";
+import Login from './../pages/login';
 
 // const userMenu = [
 //   {
@@ -32,8 +33,12 @@ export const routeData = [
       element: <Home />,
       // nestedRoutes: isAdmin === "true" ? adminMenu : userMenu,
     },
+    {
+      path: "/login",
+      element: <Login/>
+    }
     // {
-    //   path: "/login",
+    //   path: "/Login",
     //   element: auth ? (
     //     isAdmin === "true" ? (
     //       <Navigate to="/country" />
