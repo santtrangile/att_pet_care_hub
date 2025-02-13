@@ -11,6 +11,7 @@
 @import "./_dashboard.scss";
 @import "./_happyCustomer.scss";
 @import "./_meetUs.scss";
+@import "./_buzz.scss";
 
 body {
     margin: 0;
@@ -84,4 +85,5 @@ h1 {
     justify-content: center;
     font-size: 3rem;
     font-weight: bolder;
+    text-align: center;
 }
