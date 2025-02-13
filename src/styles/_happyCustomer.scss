@@ -1,0 +1,21 @@
+.customer-warpper {
+    h1 {
+        padding: 4rem;
+    }
+
+    .customer-image-wrapper {
+        display: flex;
+        flex-direction: row;
+        gap: 25px;
+        padding: 25px;
+
+        img {
+            min-width: 30vw;
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: cover;
+            border-radius: 2rem !important;
+            vertical-align: middle;
+        }
+    }
+}

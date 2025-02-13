@@ -1,10 +1,15 @@
+//components
 @import "./_variables.scss";
 @import "./_header.scss";
 @import "./_button.scss";
 @import "./_input.scss";
 @import "./_socialMedia.scss";
+
+
+//pages
 @import "./_login.scss";
 @import "./_dashboard.scss";
+@import "./_happyCustomer.scss";
 
 body {
     margin: 0;
@@ -71,6 +76,11 @@ a {
 }
 
 h1 {
+    color: $fc-black;
     margin: 0;
-    color: $fc-white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    font-weight: bolder;
 }

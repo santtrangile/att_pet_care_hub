@@ -18,7 +18,10 @@ interface loginDataInteface {
 }
 
 const Login = ({ _signIn }: ILoginInterface) => {
-  const [loginData, setLoginData] = useState<loginDataInteface>({ email: "", password: "" });
+  const [loginData, setLoginData] = useState<loginDataInteface>({
+    email: "",
+    password: "",
+  });
 
   const onChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setLoginData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
@@ -26,9 +29,9 @@ const Login = ({ _signIn }: ILoginInterface) => {
 
   const logIn = async () => {
     try {
-    //   const res = await authService.login(loginData);
+      //   const res = await authService.login(loginData);
       localStorage.setItem("isAdmin", "true");
-    //   localStorage.setItem("token", res?.data?.results?.accessToken);
+      //   localStorage.setItem("token", res?.data?.results?.accessToken);
       window.dispatchEvent(new Event("storage"));
     } catch (err: any) {
       toast.error(err?.response?.data?.message);
@@ -56,10 +59,7 @@ const Login = ({ _signIn }: ILoginInterface) => {
             placeholder="********"
             onChange={onChange}
           />
-          <Button
-            label="Login"
-            onClick={() => logIn()}
-          />
+          <Button label="Login" onClick={() => logIn()} />
           <div className="login-footer">
             <Link to="/forgot-password">Forgot Password?</Link>
             <Link to={"/signup"}>Create Account</Link>

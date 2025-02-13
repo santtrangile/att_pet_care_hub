@@ -6,7 +6,7 @@
 // import { Navigate } from "react-router";
 // import CountryDetail from "../pages/CountryDetail";
 
-import LandingPage from "../pages/landingPage";
+import LandingPage from "../pages/landingPages/landingPage";
 import Home from "../pages/home";
 import Login from "../pages/login";
 import Signup from "../pages/signup";
