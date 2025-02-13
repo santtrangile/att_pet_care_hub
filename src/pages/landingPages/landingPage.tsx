@@ -1,5 +1,6 @@
 import HappyCustomer from "./happyCustomers";
 import HeroSection from "./heroSection";
+import MeetUs from "./meetUs";
 
 
 
@@ -8,6 +9,7 @@ const LandingPage = () => {
     <div className="landing-main-wrapper">
       <HeroSection/>
       <HappyCustomer/>
+      <MeetUs/>
     </div>
   );
 };
