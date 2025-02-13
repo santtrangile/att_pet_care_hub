@@ -1,13 +1,13 @@
+const customers = [
+    {image: "/happyCustomers/customer1.jpeg"},
+    {image: "/happyCustomers/customer2.jpeg"},
+    {image: "/happyCustomers/customer3.jpeg"},
+    {image: "/happyCustomers/customer4.jpeg"}
+]
+
 const HappyCustomer = () => {
-    const customers = [
-        {image: "/happyCustomers/happyCustomer1.jpg"},
-        {image: "/happyCustomers/happyCustomer2.jpg"},
-        {image: "/happyCustomers/happyCustomer3.jpg"},
-        {image: "/happyCustomers/happyCustomer4.jpg"},
-        {image: "/happyCustomers/happyCustomer5.jpg"}
-    ]
     return (
-        <div className="customer-warpper">
+        <div className="customer-wrapper">
             <h1>Our Happy Customers</h1>
             <div className="customer-image-wrapper">
                 {customers?.map((item, index) => {
@@ -17,7 +17,7 @@ const HappyCustomer = () => {
                 })}
             </div>
         </div>
-    )
-}
+    );
+};
 
 export default HappyCustomer;
