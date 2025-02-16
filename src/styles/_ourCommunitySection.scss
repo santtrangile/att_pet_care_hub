@@ -1,0 +1,17 @@
+.our-community-section {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+
+    .bottom-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+
+        .social-icon {
+            width: 4rem;
+            height: 4rem;
+        }
+    }
+}

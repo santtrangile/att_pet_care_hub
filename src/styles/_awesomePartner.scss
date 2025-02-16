@@ -1,25 +1,26 @@
 .awesome-partner-section {
     padding: 4rem 0;
-    display: flex
-;
+    display: flex;
     flex-direction: column;
     gap: 4rem;
+
     .awesome-partner-content {
-        display: flex
-;
-padding: 0 1rem;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    .partner {
-        width: 13.875%;
-        img {
-            width: 100%;
-            height: auto;
-            object-fit: contain;
-            border-radius: 2rem;
-            filter: grayscale(1);
+        display: flex;
+        padding: 0 1rem;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .partner {
+            width: 13.875%;
+
+            img {
+                width: 100%;
+                height: auto;
+                object-fit: contain;
+                border-radius: 2rem;
+                filter: grayscale(1);
+            }
         }
-    }
     }
 }
 
@@ -28,6 +29,7 @@ padding: 0 1rem;
         .awesome-partner-content {
             justify-content: center;
             gap: 3rem;
+
             .partner {
                 width: 45%;
             }
@@ -39,6 +41,7 @@ padding: 0 1rem;
     .awesome-partner-section {
         .awesome-partner-content {
             gap: 1rem;
+
             .partner {
                 width: 100%;
             }
