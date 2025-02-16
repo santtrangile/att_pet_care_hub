@@ -34,7 +34,7 @@ const buzzData = [
 const BuzzSection = () => {
 
     return (
-        <div className="buzz-wapper">
+        <div className="buzz-wrapper">
             <h1>Buzz</h1>
             <div className="buzz-content">
                 {buzzData.map((item, key) => {

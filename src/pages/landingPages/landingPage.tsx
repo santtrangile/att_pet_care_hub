@@ -1,6 +1,7 @@
 import BuzzSection from "./buzzSection";
 import HappyCustomer from "./happyCustomers";
 import HeroSection from "./heroSection";
+import JoinUsSection from "./joinUsSection";
 import MeetUs from "./meetUs";
 
 
@@ -12,6 +13,7 @@ const LandingPage = () => {
       <HappyCustomer/>
       <MeetUs/>
       <BuzzSection/>
+      <JoinUsSection/>
     </div>
   );
 };

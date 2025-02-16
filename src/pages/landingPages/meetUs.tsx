@@ -26,7 +26,7 @@ const MeetUs = () => {
                     return (
                         <div className="meet-us-item" key={index}>
                             <img src={item.image} alt={item.name} />
-                            <h2>{item.name}</h2>
+                            <strong>{item.name}</strong>
                             <p>{item.role}</p>
                         </div>
                     )

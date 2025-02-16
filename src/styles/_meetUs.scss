@@ -15,11 +15,25 @@
             display: flex;
             flex-flow: column nowrap;
             width: 100%;
+            gap: 0.5rem;
+            justify-content: center;
+            align-items: center;
 
             img {
                 height: 400px;
                 object-fit: cover;
                 width: 100%;
+                border-radius: 2rem;
+            }
+
+            strong{
+                margin: 0;
+                font-size: 2rem;
+            }
+            
+            p {
+                margin: 0;
+                font-size: 1rem;
             }
         }
     }
@@ -51,10 +65,17 @@
 @media (min-width: 1085px) {
     .meet-us-wrapper {
         .meet-us-content {
-            // gap: 1.5rem;
             .meet-us-item {
                 width: 24%;
             }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .meet-us-wrapper {
+        .meet-us-content {
+            gap: 1.5rem;
         }
     }
 }
