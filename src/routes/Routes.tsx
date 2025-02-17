@@ -10,6 +10,7 @@ import LandingPage from "../pages/landingPages/landingPage";
 import Home from "../pages/home";
 import Login from "../pages/login";
 import Signup from "../pages/signup";
+import ClinicServices from "../pages/landingPages/clinicServices";
 
 // const userMenu = [
 //   {
@@ -33,6 +34,9 @@ const userRoutes = [
   {
     path: "/",
     element: <LandingPage />
+  }, {
+    path : "/clinicServices/:clinicId",
+    element: <ClinicServices/>
   }
 ]
 

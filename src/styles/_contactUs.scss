@@ -45,11 +45,11 @@
 
                 &:enabled {
                     &:hover {
-                        border-color: #90be6d;
+                        border-color: $fc-green;
                     }
 
                     &:focus {
-                        border-color: #90be6d;
+                        border-color: $fc-green;
                         outline: none;
                     }
                 }

@@ -17,6 +17,7 @@
 @import "./_ourCommunitySection.scss";
 @import "./_contactUs.scss";
 @import "./_clinicSection.scss";
+@import "./_services.scss";
 
 body {
     margin: 0;
@@ -78,7 +79,7 @@ a {
     font-size: 0.875rem;
     font-weight: 700;
     &:hover {
-        color: $fc-light-green;
+        color: $fc-hover-green;
     }
 }
 

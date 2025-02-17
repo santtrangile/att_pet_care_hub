@@ -6,7 +6,7 @@ const Header = () => {
     const headerLabels = [
         {label: "Home", path: "/"},
         {label: "Community", path: "/community"},
-        {label: "Shop", path: "/hop"},
+        {label: "Shop", path: "/shop"},
     ]
     return (
         <div className='header-container'>
@@ -15,9 +15,9 @@ const Header = () => {
                 Trillionsmed
             </span>
             <div className='header-labels'>
-                {headerLabels?.map((item) => {
+                {headerLabels?.map((item, index) => {
                     return (
-                        <Link to={item?.path} className='header-label'>{item?.label}</Link>
+                        <Link to={item?.path} key={index} className='header-label'>{item?.label}</Link>
                     )
                 })}
             </div>
