@@ -20,7 +20,7 @@ const InputField: React.FC<InputFieldProps> = ({
   placeholder = type === "number" ? "" : "",
   className,
   name="",
-  label = "Label",
+  label,
   disabled = false,
   maxLength = 100,
   minLength = 300,
@@ -33,7 +33,7 @@ const InputField: React.FC<InputFieldProps> = ({
   return (
     <>
       <div className={"input-wrapper"} style={width ? {width: width} : {}}>
-        <div className="label">{label}</div>
+        {label && <div className="label">{label}</div>}
         <input
           className="input-field"
           placeholder={placeholder}

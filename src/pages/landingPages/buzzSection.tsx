@@ -40,7 +40,7 @@ const BuzzSection = () => {
                 {buzzData.map((item, key) => {
                     return (
                         <div key={key} className="buzz-item">
-                            <p>{item.customerName}</p>
+                            <span>{item.customerName}</span>
                             <img src={item.logo} alt={item.customerName} />
                             <p>{item.comment}</p>
                         </div>
