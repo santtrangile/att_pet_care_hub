@@ -5,6 +5,7 @@ import HappyCustomer from "./happyCustomers";
 import HeroSection from "./heroSection";
 import JoinUsSection from "./joinUsSection";
 import MeetUs from "./meetUs";
+import Clinic from "./ourClinic";
 import OurCommunitySection from "./ourCommunitySection";
 
 
@@ -14,6 +15,7 @@ const LandingPage = () => {
     <div className="landing-main-wrapper">
       <HeroSection/>
       <HappyCustomer/>
+      <Clinic/>
       <MeetUs/>
       <BuzzSection/>
       <JoinUsSection/>

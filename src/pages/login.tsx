@@ -4,7 +4,7 @@ import { RootState } from "../redux/store";
 import InputField from "../components/InputField";
 import Button from "../components/Button";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import SocialButton from "../components/SocialMediaButtons";
 import { toast } from "react-toastify";
 
@@ -13,12 +13,15 @@ interface ILoginInterface {
 }
 
 interface loginDataInteface {
+  userId: string;
   email: string;
   password: string;
 }
 
 const Login = ({ _signIn }: ILoginInterface) => {
+  const navigate = useNavigate();
   const [loginData, setLoginData] = useState<loginDataInteface>({
+    userId: "2",
     email: "",
     password: "",
   });
@@ -29,10 +32,10 @@ const Login = ({ _signIn }: ILoginInterface) => {
 
   const logIn = async () => {
     try {
-      //   const res = await authService.login(loginData);
       localStorage.setItem("isAdmin", "true");
-      //   localStorage.setItem("token", res?.data?.results?.accessToken);
+      localStorage.setItem("token", loginData.userId);
       window.dispatchEvent(new Event("storage"));
+      navigate('/')
     } catch (err: any) {
       toast.error(err?.response?.data?.message);
     } finally {
