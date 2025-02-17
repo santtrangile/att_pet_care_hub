@@ -19,7 +19,8 @@ import { clinics } from "../../utils/clinicData";
                 <p>Contact: {clinic.contact}</p>
                 <Button label={"Book Slot"} onClick={() => {
                     if (!isUserId) {
-                        navigate('/login')
+                        navigate('/login');
+                        localStorage.setItem("clinicId", (clinic.id).toString());
                     } else {
                       navigate(`/clinicServices/${clinic.id}`);
                     }

@@ -13,6 +13,7 @@ const ClinicServices = () => {
     useEffect(() => {
         const clinicService = clinics.find((item) => item.id === Number(clinicId));
         setClinic(clinicService);
+        // eslint-disable-next-line
     },[])
 
     const checkOriginalPrice = (originalAmount: number, discountAmount: number) => {
@@ -42,7 +43,7 @@ const ClinicServices = () => {
                                     </div>
                                     <div className="service-image">
                                         <img src={item.imageUrl} alt={item.title} />
-                                        <Button label="Book Now"/>
+                                        <Button label="Book Now" onClick={() => navigate(`/book-slot/${clinicId}`)}/>
                                     </div>
                                 </div>
                             )

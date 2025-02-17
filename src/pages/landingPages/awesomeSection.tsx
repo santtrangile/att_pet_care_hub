@@ -26,7 +26,7 @@ const AwesomePartners = () => {
                 {partnerData?.map((item, index) => {
                     return (
                         <div className="partner" key={index}>
-                            <img src={item?.img} alt={"Partner Image"}/>
+                            <img src={item?.img} alt={`Partner ${index}`}/>
                         </div>
                     )
                 })}

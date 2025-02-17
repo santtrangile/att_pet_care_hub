@@ -35,7 +35,13 @@ const Login = ({ _signIn }: ILoginInterface) => {
       localStorage.setItem("isAdmin", "true");
       localStorage.setItem("token", loginData.userId);
       window.dispatchEvent(new Event("storage"));
-      navigate('/')
+      const userId = localStorage.getItem("clinicId");
+      if(userId) {
+        navigate(`/clinicServices/${userId}`);
+        return;
+      } else {
+        navigate('/');
+      }
     } catch (err: any) {
       toast.error(err?.response?.data?.message);
     } finally {

@@ -11,6 +11,7 @@ import Home from "../pages/home";
 import Login from "../pages/login";
 import Signup from "../pages/signup";
 import ClinicServices from "../pages/landingPages/clinicServices";
+import BookSlot from "../pages/landingPages/bookSlot";
 
 // const userMenu = [
 //   {
@@ -37,6 +38,9 @@ const userRoutes = [
   }, {
     path : "/clinicServices/:clinicId",
     element: <ClinicServices/>
+  }, {
+    path: "/book-slot/:clinicId",
+    element: <BookSlot/>
   }
 ]
 

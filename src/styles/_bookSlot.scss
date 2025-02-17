@@ -1,0 +1,88 @@
+.book-slot-container {
+    height: 100%;
+    display: flex;
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+    flex-direction: column;
+    gap: 4rem;
+
+    .slot-wrapper {
+        padding: 0 2rem;
+        display: flex;
+        gap: 5rem;
+        align-items: center;
+        justify-content: center;
+
+        .slot {
+            height: fit-content;
+            padding: 1rem;
+            border: 1px solid $fc-green;
+            border-radius: 15px;
+            cursor: pointer;
+
+            &:hover {
+                background-color: $fc-light-green;
+                color: $fc-green;
+            }
+
+            &.active {
+                background-color: $fc-green;
+                color: $fc-white;
+            }
+        }
+    }
+
+    .slot-content {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 0 2rem;
+
+        .doctor-card {
+            border: 1px solid #ccc;
+            padding: 15px;
+            border-radius: 10px;
+            width: 300px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+            .doctor-image {
+                width: 100%;
+                height: auto;
+                border-radius: 5px;
+            }
+
+            .slots {
+                h4 {
+                    margin-top: 10px;
+                }
+
+                .slot-list {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 5px;
+
+                    .slot-item {
+                        padding: 5px 10px;
+                        border: 1px solid $fc-green;
+                        border-radius: 5px;
+                        cursor: pointer;
+
+                        &.booked {
+                            color: white;
+                            cursor: not-allowed;
+                            background-color: $fc-green;
+                            &:hover {
+                                background-color: $fc-green;
+                            }
+                        }
+
+                        &:hover {
+                            background-color: $fc-green;
+                            color: $fc-white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

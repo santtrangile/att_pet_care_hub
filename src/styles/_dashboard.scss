@@ -33,9 +33,12 @@
             }
 
             .button {
-                background: transparent;
+                background: rgba(0,0,0,0.2);
                 border: 3px solid;
                 font-size: 1.5rem;
+                &:hover {
+                    background: rgba(0,0,0,0.4);
+                }
             }
         }
     }

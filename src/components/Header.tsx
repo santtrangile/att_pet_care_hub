@@ -10,7 +10,7 @@ const Header = () => {
     ]
     return (
         <div className='header-container'>
-            <span>
+            <span onClick={() => navigate("/")}>
                 <img src='/favicon.ico' alt='Logo'/>
                 Trillionsmed
             </span>
