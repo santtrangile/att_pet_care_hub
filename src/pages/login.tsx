@@ -31,21 +31,26 @@ const Login = ({ _signIn }: ILoginInterface) => {
   };
 
   const logIn = async () => {
-    try {
-      localStorage.setItem("isAdmin", "true");
-      localStorage.setItem("token", loginData.userId);
-      window.dispatchEvent(new Event("storage"));
-      const userId = localStorage.getItem("clinicId");
-      if(userId) {
-        navigate(`/clinicServices/${userId}`);
-        return;
-      } else {
-        navigate('/');
+    if(loginData?.email !== "" && loginData?.password !== "") {
+      try {
+        localStorage.setItem("isAdmin", "true");
+        localStorage.setItem("token", loginData.userId);
+        localStorage.setItem("userName", loginData.email);
+        window.dispatchEvent(new Event("storage"));
+        const userId = localStorage.getItem("clinicId");
+        if(userId) {
+          navigate(`/clinicServices/${userId}`);
+          return;
+        } else {
+          navigate('/');
+        }
+      } catch (err: any) {
+        toast.error(err?.response?.data?.message);
+      } finally {
+        _signIn(loginData.email || "");
       }
-    } catch (err: any) {
-      toast.error(err?.response?.data?.message);
-    } finally {
-      _signIn(loginData.email || "");
+    } else {
+      toast.error("Please fill all fields");
     }
   };
 
