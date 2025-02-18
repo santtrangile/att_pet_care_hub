@@ -43,7 +43,7 @@ const ClinicServices = () => {
                                     </div>
                                     <div className="service-image">
                                         <img src={item.imageUrl} alt={item.title} />
-                                        <Button label="Book Now" onClick={() => navigate(`/book-slot/${clinicId}`)}/>
+                                        <Button label="Book Now" onClick={() => navigate(`/book-slot/${clinicId}/${item?.id}`)}/>
                                     </div>
                                 </div>
                             )

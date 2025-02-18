@@ -10,7 +10,7 @@ const Home = () => {
           <Outlet />
         </div>
         <footer className="footer">
-          <p>© 2024 VetApp. All rights reserved.</p>
+          <p>© 2025 VetApp. All rights reserved.</p>
         </footer>
       </div>
     </div>

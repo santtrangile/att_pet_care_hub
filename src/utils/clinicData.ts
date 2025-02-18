@@ -7,6 +7,7 @@ export const clinics = [
         imageUrl: '/clinics/clinic1.avif',
         services: [
             {
+                id: 1,
                 title: 'Consultation',
                 description: 'General consultation with our experienced doctors.',
                 imageUrl: '/clinics/services/consultation.jpg',
@@ -17,6 +18,7 @@ export const clinics = [
                 eligibleForDiscount: 'Members, New Customers' // Who can redeem
             },
             {
+                id: 2,
                 title: 'Bathing',
                 description: 'Personalized bathing services to ensure relaxation.',
                 imageUrl: '/clinics/services/bathing.avif',
@@ -27,6 +29,7 @@ export const clinics = [
                 eligibleForDiscount: 'Seniors, New Customers' // Who can redeem
             },
             {
+                id: 3,
                 title: 'Physical Therapy',
                 description: 'Therapeutic treatment for muscle and joint pain relief.',
                 imageUrl: '/clinics/services/physicalTherapy.avif',
@@ -37,6 +40,7 @@ export const clinics = [
                 eligibleForDiscount: 'Members, Seniors' // Who can redeem
             },
             {
+                id: 4,
                 title: 'Surgery Consultation',
                 description: 'Consultation with a surgeon for any necessary procedures.',
                 imageUrl: '/clinics/services/surgeryConsultation.avif',
@@ -56,6 +60,7 @@ export const clinics = [
         imageUrl: '/clinics/clinic2.avif',
         services: [
             {
+                id: 1,
                 title: 'Blood Test',
                 description: 'Comprehensive blood tests to monitor your health.',
                 imageUrl: '/clinics/services/bloodTest.avif',
@@ -66,6 +71,7 @@ export const clinics = [
                 eligibleForDiscount: 'Everyone' // Who can redeem
             },
             {
+                id: 2,
                 title: 'X-ray',
                 description: 'Advanced diagnostic X-ray services.',
                 imageUrl: '/clinics/services/x-ray.avif',
@@ -76,6 +82,7 @@ export const clinics = [
                 eligibleForDiscount: 'Members' // Who can redeem
             },
             {
+                id: 3,
                 title: 'Ultrasound',
                 description: 'Non-invasive ultrasound diagnostics for various conditions.',
                 imageUrl: '/clinics/services/ultraSound.avif',
@@ -95,6 +102,7 @@ export const clinics = [
         imageUrl: '/clinics/clinic3.avif',
         services: [
             {
+                id: 1,
                 title: 'Vaccination',
                 description: 'Get vaccinated for various diseases and conditions.',
                 imageUrl: '/clinics/services/vaccination.avif',
@@ -105,6 +113,7 @@ export const clinics = [
                 eligibleForDiscount: 'Seniors, New Customers' // Who can redeem
             },
             {
+                id: 2,
                 title: 'Dental Checkup',
                 description: 'Routine dental checkups to keep your teeth healthy.',
                 imageUrl: '/clinics/services/dentalCheckup.avif',
@@ -115,6 +124,7 @@ export const clinics = [
                 eligibleForDiscount: 'Members, Seniors' // Who can redeem
             },
             {
+                id: 3,
                 title: 'Dermatology',
                 description: 'Consult a dermatologist for skin-related concerns.',
                 imageUrl: '/clinics/services/dermatology.avif',
@@ -133,6 +143,7 @@ export const clinics = [
         contact: '321-654-9870',
         imageUrl: '/clinics/clinic4.avif',
         services: [{
+            id: 1,
             title: 'Blood Test',
             description: 'Comprehensive blood tests to monitor your health.',
             imageUrl: '/clinics/services/bloodTest.avif',
@@ -143,6 +154,7 @@ export const clinics = [
             eligibleForDiscount: 'Everyone' // Who can redeem
         },
         {
+            id: 2,
             title: 'X-ray',
             description: 'Advanced diagnostic X-ray services.',
             imageUrl: '/clinics/services/x-ray.avif',
@@ -153,6 +165,7 @@ export const clinics = [
             eligibleForDiscount: 'Members' // Who can redeem
         },
         {
+            id: 3,
             title: 'Ultrasound',
             description: 'Non-invasive ultrasound diagnostics for various conditions.',
             imageUrl: '/clinics/services/ultraSound.avif',
@@ -172,6 +185,7 @@ export const clinics = [
         imageUrl: '/clinics/clinic5.avif',
         services: [
             {
+                id: 1,
                 title: 'Vaccination',
                 description: 'Get vaccinated for various diseases and conditions.',
                 imageUrl: '/clinics/services/vaccination.avif',
@@ -182,6 +196,7 @@ export const clinics = [
                 eligibleForDiscount: 'Seniors, New Customers' // Who can redeem
             },
             {
+                id: 2,
                 title: 'Dental Checkup',
                 description: 'Routine dental checkups to keep your teeth healthy.',
                 imageUrl: '/clinics/services/dentalCheckup.avif',
@@ -192,6 +207,7 @@ export const clinics = [
                 eligibleForDiscount: 'Members, Seniors' // Who can redeem
             },
             {
+                id: 3,
                 title: 'Dermatology',
                 description: 'Consult a dermatologist for skin-related concerns.',
                 imageUrl: '/clinics/services/dermatology.avif',
@@ -211,6 +227,7 @@ export const clinics = [
         imageUrl: '/clinics/clinic6.avif',
         services: [
             {
+                id: 1,
                 title: 'Vaccination',
                 description: 'Get vaccinated for various diseases and conditions.',
                 imageUrl: '/clinics/services/vaccination.avif',
@@ -221,6 +238,7 @@ export const clinics = [
                 eligibleForDiscount: 'Seniors, New Customers' // Who can redeem
             },
             {
+                id: 2,
                 title: 'Dental Checkup',
                 description: 'Routine dental checkups to keep your teeth healthy.',
                 imageUrl: '/clinics/services/dentalCheckup.avif',
@@ -231,6 +249,7 @@ export const clinics = [
                 eligibleForDiscount: 'Members, Seniors' // Who can redeem
             },
             {
+                id: 3,
                 title: 'Dermatology',
                 description: 'Consult a dermatologist for skin-related concerns.',
                 imageUrl: '/clinics/services/dermatology.avif',
@@ -250,6 +269,7 @@ export const clinics = [
         imageUrl: '/clinics/clinic7.avif',
         services: [
             {
+                id: 1,
                 title: 'Blood Test',
                 description: 'Comprehensive blood tests to monitor your health.',
                 imageUrl: '/clinics/services/bloodTest.avif',
@@ -260,6 +280,7 @@ export const clinics = [
                 eligibleForDiscount: 'Everyone' // Who can redeem
             },
             {
+                id: 2,
                 title: 'X-ray',
                 description: 'Advanced diagnostic X-ray services.',
                 imageUrl: '/clinics/services/x-ray.avif',
@@ -270,6 +291,7 @@ export const clinics = [
                 eligibleForDiscount: 'Members' // Who can redeem
             },
             {
+                id: 3,
                 title: 'Ultrasound',
                 description: 'Non-invasive ultrasound diagnostics for various conditions.',
                 imageUrl: '/clinics/services/ultraSound.avif',
@@ -288,6 +310,7 @@ export const clinics = [
         contact: '890-123-4567',
         imageUrl: '/clinics/clinic8.avif',
         services: [{
+            id: 1,
             title: 'Vaccination',
             description: 'Get vaccinated for various diseases and conditions.',
             imageUrl: '/clinics/services/vaccination.avif',
@@ -298,6 +321,7 @@ export const clinics = [
             eligibleForDiscount: 'Seniors, New Customers' // Who can redeem
         },
         {
+            id: 2,
             title: 'Dental Checkup',
             description: 'Routine dental checkups to keep your teeth healthy.',
             imageUrl: '/clinics/services/dentalCheckup.avif',
@@ -308,6 +332,7 @@ export const clinics = [
             eligibleForDiscount: 'Members, Seniors' // Who can redeem
         },
         {
+            id: 3,
             title: 'Dermatology',
             description: 'Consult a dermatologist for skin-related concerns.',
             imageUrl: '/clinics/services/dermatology.avif',
@@ -327,6 +352,7 @@ export const clinics = [
         imageUrl: '/clinics/clinic9.avif',
         services: [
             {
+                id: 1,
                 title: 'Vaccination',
                 description: 'Get vaccinated for various diseases and conditions.',
                 imageUrl: '/clinics/services/vaccination.avif',
@@ -337,6 +363,7 @@ export const clinics = [
                 eligibleForDiscount: 'Seniors, New Customers' // Who can redeem
             },
             {
+                id: 2,
                 title: 'Dental Checkup',
                 description: 'Routine dental checkups to keep your teeth healthy.',
                 imageUrl: '/clinics/services/dentalCheckup.avif',
@@ -347,6 +374,7 @@ export const clinics = [
                 eligibleForDiscount: 'Members, Seniors' // Who can redeem
             },
             {
+                id: 3,
                 title: 'Dermatology',
                 description: 'Consult a dermatologist for skin-related concerns.',
                 imageUrl: '/clinics/services/dermatology.avif',
@@ -366,6 +394,7 @@ export const clinics = [
         imageUrl: '/clinics/clinic10.jpg',
         services: [
             {
+                id: 1,
                 title: 'Blood Test',
                 description: 'Comprehensive blood tests to monitor your health.',
                 imageUrl: '/clinics/services/bloodTest.avif',
@@ -376,6 +405,7 @@ export const clinics = [
                 eligibleForDiscount: 'Everyone' // Who can redeem
             },
             {
+                id: 2,
                 title: 'X-ray',
                 description: 'Advanced diagnostic X-ray services.',
                 imageUrl: '/clinics/services/x-ray.avif',
@@ -386,6 +416,7 @@ export const clinics = [
                 eligibleForDiscount: 'Members' // Who can redeem
             },
             {
+                id: 3,
                 title: 'Ultrasound',
                 description: 'Non-invasive ultrasound diagnostics for various conditions.',
                 imageUrl: '/clinics/services/ultraSound.avif',

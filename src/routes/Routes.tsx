@@ -39,7 +39,7 @@ const userRoutes = [
     path : "/clinicServices/:clinicId",
     element: <ClinicServices/>
   }, {
-    path: "/book-slot/:clinicId",
+    path: "/book-slot/:clinicId/:serviceId",
     element: <BookSlot/>
   }
 ]

@@ -18,7 +18,7 @@ if (container) {
         <Provider store={store}>
           <ToastContainer
             position="top-center"
-            autoClose={1500}
+            autoClose={5000}
             hideProgressBar={true}
             newestOnTop
             closeOnClick
