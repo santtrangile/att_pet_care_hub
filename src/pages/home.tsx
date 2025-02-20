@@ -1,12 +1,14 @@
-import { Outlet } from "react-router-dom";
+import { Outlet, useLocation } from "react-router-dom";
 import Header from "../components/Header";
 
 const Home = () => {
+  const pathName = useLocation().pathname;
+
   return (
     <div className="main-container">
       <Header />
       <div className="content-body">
-        <div className="middle-content">
+        <div className={`${pathName === "/" ? "landing-content" : ""} middle-content`}>
           <Outlet />
         </div>
         <footer className="footer">

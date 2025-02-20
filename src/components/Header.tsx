@@ -1,7 +1,7 @@
 import { Link, useNavigate } from 'react-router-dom';
 import Button from './Button';
-import Avatar from './Avatar';
 import { useState } from 'react';
+import Avatar from './Avatar';
 
 const Header = () => {
     const navigate = useNavigate();

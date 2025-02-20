@@ -20,6 +20,7 @@
 @import "./_clinicSection.scss";
 @import "./_services.scss";
 @import "./_bookSlot.scss";
+@import "./_product.scss";
 
 body {
     margin: 0;
@@ -27,6 +28,7 @@ body {
     font-family: $fc-font !important;
     font-weight: 500 !important;
     font-size: 0.875rem !important;
+    scroll-behavior: auto;
 }
 
 .main-container {
@@ -40,24 +42,40 @@ body {
         position: relative;
         overflow-y: auto;
         overflow-x: hidden;
+
         .middle-content {
             height: fit-content;
+            min-height: calc(100% - 86px);
+            padding-top: 6rem;
+
+            .header-title {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 1rem;
+                background: $fc-green;
+                color: $fc-white;
+            }
+            &.landing-content {
+                padding: 0;
+            }
         }
 
         &::-webkit-scrollbar {
             width: 5px;
             height: 5px;
         }
-        
+
         &::-webkit-scrollbar-track {
             background: #f1f1f1;
         }
-        
+
         &::-webkit-scrollbar-thumb {
             background: #888;
             border-radius: 6px;
         }
-        
+
         &::-webkit-scrollbar-thumb:hover {
             background: #555;
         }
@@ -80,6 +98,7 @@ a {
     color: $fc-green;
     font-size: 0.875rem;
     font-weight: 700;
+
     &:hover {
         color: $fc-hover-green;
     }

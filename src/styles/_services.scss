@@ -1,10 +1,14 @@
 .service-container {
+    min-height: calc(100vh - 86px);
+
     .service-wrapper {
-        padding-top: 7rem;
+        padding-top: 1rem;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
+        gap: 1rem;
+        width: 100%;
 
         .clinic-detail {
             background: #90be6d;
@@ -26,6 +30,7 @@
         .clinic-services {
             width: calc(100% - 64px);
             padding: 2rem;
+            padding-top: 0;
             display: flex;
             flex-direction: column;
             gap: 1rem;
@@ -119,7 +124,7 @@
                     justify-content: center;
                     align-items: center;
                     gap: 1rem;
-                    
+
                     .clinic-content {
                         text-align: center;
                         align-items: center;
@@ -128,7 +133,7 @@
                     .service-image {
                         width: 100%;
                         height: auto;
-                        
+
                         img {
                             width: 100%;
                             height: auto;
@@ -146,4 +151,8 @@
             }
         }
     }
+}
+
+.service-error {
+    height: calc(100vh - 86px);
 }

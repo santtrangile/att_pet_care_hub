@@ -23,7 +23,7 @@ const FirstName = (value: string) => {
 };
 
 
-const HPHAvatar: React.FC<AvatarProps> = ({
+const Avatar: React.FC<AvatarProps> = ({
   name = 'kitty chan',
   className = "",
   imageUrl = '',
@@ -39,4 +39,4 @@ const HPHAvatar: React.FC<AvatarProps> = ({
     </>
   );
 };
-export default HPHAvatar;
+export default Avatar;

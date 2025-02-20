@@ -1,8 +1,8 @@
 import { useState } from "react";
-import { doctorsDataLatest, slotDates } from "../../utils/slotData";
-import DialogBox from "../../components/DialogBox";
-import Button from "../../components/Button";
-import { clinics } from "../../utils/clinicData";
+import { doctorsDataLatest, slotDates } from "../utils/slotData";
+import DialogBox from "../components/DialogBox";
+import Button from "../components/Button";
+import { clinics } from "../utils/clinicData";
 import { useParams } from "react-router-dom";
 import { toast } from "react-toastify";
 

@@ -2,11 +2,13 @@ import { Routes, Route } from "react-router-dom";
 import { connect } from "react-redux";
 import { RootState } from "./redux/store";
 import { routeData } from "./routes/Routes";
+import ScrollToTop from "./components/ScrollUp";
 
 const App = () => {
 
   return (
     <>
+      <ScrollToTop />
       <Routes>
         {routeData?.map((route, index) => (
           <Route key={index} path={route.path} element={route.element}>

@@ -429,3 +429,64 @@ export const clinics = [
         ]
     },
 ];
+
+export const productData = [
+    {
+        id: "1",
+        "itemName": "Product 1",
+        "sku": "ABC123",
+        "price": {
+            "regular": 100,
+            "discounted": 80,
+            "currency": "INR"
+        },
+        "description": "This is a sample item description.",
+        "inventory": 105,
+        "imageUrls": [
+            "/products/product1Front.avif",
+            "/products/product1Back.avif"
+        ],
+        "clinicId": "67aaea88518065c7570bd455",
+        "clinicName": "Happy Paws Clinic",
+        "clinicDescription": "A full-service pet clinic offering a wide range of medical services.",
+        "clinicAddress": {
+            "address": "123 Pet Street",
+            "city": "New York",
+            "state": "NY",
+            "postal_code": "10001",
+            "latitude": 40.7128,
+            "longitude": -74.006
+        },
+        "brand": "pedigree",
+        "category": "foods-and-accessories"
+    },{
+        id: "2",
+        "itemName": "Product 2",
+        "sku": "ABC12",
+        "price": {
+            "regular": 100,
+            "discounted": 80,
+            "currency": "INR"
+        },
+        "description": "This is a Product 2 description.",
+        "inventory": 105,
+        "imageUrls": [
+            "/products/product2.avif",
+            "/products/product2Left.avif",
+            "/products/product2Right.avif"
+        ],
+        "clinicId": "67aaea88518065c7570bd455",
+        "clinicName": "Happy Paws Clinic",
+        "clinicDescription": "A full-service pet clinic offering a wide range of medical services.",
+        "clinicAddress": {
+            "address": "123 Pet Street",
+            "city": "New York",
+            "state": "NY",
+            "postal_code": "10001",
+            "latitude": 40.7128,
+            "longitude": -74.006
+        },
+        "brand": "pedigree",
+        "category": "foods-and-accessories"
+    }
+]

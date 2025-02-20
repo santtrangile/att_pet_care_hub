@@ -1,35 +1,10 @@
-// import Country from "../pages/Country";
-// import Appointment from "../pages/Appointment";
-// import Home from "../pages/Home";
-// import Login from "../pages/login";
-// import SignUp from "../pages/signup";
-// import { Navigate } from "react-router";
-// import CountryDetail from "../pages/CountryDetail";
-
 import LandingPage from "../pages/landingPages/landingPage";
 import Home from "../pages/home";
 import Login from "../pages/login";
 import Signup from "../pages/signup";
-import ClinicServices from "../pages/landingPages/clinicServices";
-import BookSlot from "../pages/landingPages/bookSlot";
-
-// const userMenu = [
-//   {
-//     path: "/myAppointment",
-//     element: <Appointment />,
-//   },
-// ];
-
-// const adminMenu = [
-//   {
-//     path: "/country",
-//     element: <Country />,
-//   },
-//   {
-//     path: "/countryDetail/:id",
-//     element: <CountryDetail />,
-//   },
-// ];
+import ClinicServices from "../pages/clinicServices";
+import BookSlot from "../pages/bookSlot";
+import ProductDetail from "../pages/productDetail";
 
 const userRoutes = [
   {
@@ -41,6 +16,9 @@ const userRoutes = [
   }, {
     path: "/book-slot/:clinicId/:serviceId",
     element: <BookSlot/>
+  }, {
+    path: "product/:productId",
+    element: <ProductDetail/>
   }
 ]
 
@@ -58,28 +36,4 @@ export const routeData = [
       path: "/signup",
       element: <Signup/>
     }
-    // {
-    //   path: "/Login",
-    //   element: auth ? (
-    //     isAdmin === "true" ? (
-    //       <Navigate to="/country" />
-    //     ) : (
-    //       <Navigate to="/myAppointment" />
-    //     )
-    //   ) : (
-    //     <Login />
-    //   ),
-    // },
-    // {
-    //   path: "/signup",
-    //   element: auth ? (
-    //     isAdmin === "true" ? (
-    //       <Navigate to="/country" />
-    //     ) : (
-    //       <Navigate to="/myAppointment" />
-    //     )
-    //   ) : (
-    //     <SignUp />
-    //   ),
-    // },
   ];
