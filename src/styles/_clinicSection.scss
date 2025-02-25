@@ -6,7 +6,6 @@
 
     .clinic-container {
         position: relative;
-        margin-bottom: 20px;
         width: calc(100% - 48px);
         padding: 0 1.5rem;
 
@@ -47,5 +46,12 @@
                 }
             }
         }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .clinic-wrapper {
+        gap: 3rem;
+        padding-bottom: 3rem;
     }
 }

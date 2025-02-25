@@ -1,9 +1,9 @@
 .buzz-wrapper {
     display: flex;
     justify-content: center;
-    gap: 4rem;
     flex-direction: column;
-    padding: 4rem 0;
+    padding: 3rem 0;
+    gap: 3rem;
 
     .buzz-content {
         display: flex;
@@ -43,6 +43,8 @@
 
 @media (min-width: 993px) {
     .buzz-wrapper {
+        padding: 4rem 0;
+        gap: 4rem;
         .buzz-content {
             .buzz-item {
                 width: 33.33%;

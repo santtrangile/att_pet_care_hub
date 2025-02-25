@@ -8,7 +8,7 @@
         display: flex;
         flex-direction: row;
         gap: 1.5rem;
-        padding: 1.5rem;
+        padding: 0 1.5rem;
 
         img {
             min-width: 30vw;
@@ -18,5 +18,12 @@
             border-radius: 2rem !important;
             vertical-align: middle;
         }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .customer-wrapper {
+        gap: 3rem;
+        padding: 3rem 0;
     }
 }

@@ -5,6 +5,7 @@ import Signup from "../pages/signup";
 import ClinicServices from "../pages/clinicServices";
 import BookSlot from "../pages/bookSlot";
 import ProductDetail from "../pages/productDetail";
+import Cart from "../pages/cart";
 
 const userRoutes = [
   {
@@ -17,8 +18,11 @@ const userRoutes = [
     path: "/book-slot/:clinicId/:serviceId",
     element: <BookSlot/>
   }, {
-    path: "product/:productId",
+    path: "/product/:productId",
     element: <ProductDetail/>
+  }, {
+    path: "/cart",
+    element: <Cart/>
   }
 ]
 

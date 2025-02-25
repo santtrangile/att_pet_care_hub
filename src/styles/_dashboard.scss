@@ -43,3 +43,18 @@
         }
     }
 }
+
+@media screen and (max-width: 768px) {
+    .landing-main-wrapper {
+        .image-wrapper { 
+            .content-wrapper {
+                p {
+                    font-size: 1rem;
+                }
+                .button {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}

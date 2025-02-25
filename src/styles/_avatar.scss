@@ -14,9 +14,16 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    &:focus {
+        outline: none;
+    }
 }
 
 .avatar {
+    position: relative;
+    &:focus {
+        outline: none;
+    }
     .avatar-dropdown {
         position: absolute;
         background: $fc-white;
@@ -25,6 +32,9 @@
         border-radius: 10px;
         margin-top: 0.25rem;
         border: 1px solid $fc-green;
+        .header-label-li {
+            display: none;
+        }
         li {
             list-style: none;
             cursor: pointer;
@@ -32,6 +42,17 @@
             &:hover {
                 background-color: $fc-green;
                 color: $fc-white;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .avatar {
+        .avatar-dropdown { 
+            right: 0;
+            .header-label-li {
+                display: block;
             }
         }
     }

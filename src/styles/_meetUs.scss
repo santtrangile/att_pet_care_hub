@@ -42,7 +42,6 @@
 @media (min-width: 767px) and (max-width: 992px) {
     .meet-us-wrapper {
         .meet-us-content {
-            
             gap: 1.5rem;
             .meet-us-item {
                 width: 47%;
@@ -74,6 +73,7 @@
 
 @media (max-width: 767px) {
     .meet-us-wrapper {
+        gap: 3rem;
         .meet-us-content {
             gap: 1.5rem;
         }

@@ -55,3 +55,30 @@
         }
     }
 }
+
+@media screen and (max-width: 768px) {
+    .header-container {
+        span {
+            font-size: 0.875rem;
+            img {
+                height: 3rem;
+                min-width: 3rem;
+            }
+        }
+        .header-labels {
+            display: none;
+        }
+        .button-wrapper {
+            .button {
+                font-size: 1rem;
+            }
+        }
+        .avatar {
+            .avatar-wrapper {
+                width: 3rem;
+                height: 3rem;
+                margin-right: 0;
+            }
+        }
+    }
+}

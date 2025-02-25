@@ -2,14 +2,10 @@ import { Link, useNavigate } from 'react-router-dom';
 import Button from './Button';
 import { useState } from 'react';
 import Avatar from './Avatar';
+import { headerLabels } from '../utils/headerLabels';
 
 const Header = () => {
     const navigate = useNavigate();
-    const headerLabels = [
-        {label: "Home", path: "/"},
-        {label: "Community", path: "/community"},
-        {label: "Shop", path: "/shop"},
-    ]
     const isUserId = localStorage.getItem("token");
     const userName = localStorage.getItem("userName");
     const [showDropdown, setShowDropdown] = useState(false);
@@ -32,6 +28,14 @@ const Header = () => {
                     <Avatar name={userName || ""} onClick={()=> setShowDropdown(!showDropdown)}/>
                     {showDropdown && 
                         <ul className='avatar-dropdown'>
+                            {headerLabels?.map((item, index) => {
+                                return (
+                                    <li className='header-label-li' key={index} onClick={() => {
+                                        navigate(item?.path);
+                                        setShowDropdown(!showDropdown);
+                                    }}>{item?.label}</li>
+                                )
+                            })}
                             <li onClick={() => {
                                 localStorage.clear();
                                 navigate("/")
