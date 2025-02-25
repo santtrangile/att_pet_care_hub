@@ -16,7 +16,7 @@ const Product = ({clinic}: any) => {
                 {clinic?.products?.map((item: any, index: number) => {
                     return (
                         <div className="clinic-product" key={index} onClick={() => {
-                                navigate(`/product/${item?.id}`);
+                                navigate(`/product/${item?.itemId}`);
                             }}
                         >
                             <div className="product-content">

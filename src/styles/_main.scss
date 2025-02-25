@@ -5,6 +5,7 @@
 @import "./_input.scss";
 @import "./_socialMedia.scss";
 @import "_avatar.scss";
+@import "_carousel.scss";
 
 
 //pages
@@ -21,6 +22,7 @@
 @import "./_services.scss";
 @import "./_bookSlot.scss";
 @import "./_product.scss";
+@import "./_productDetail.scss";
 
 body {
     margin: 0;
@@ -45,7 +47,7 @@ body {
 
         .middle-content {
             height: fit-content;
-            min-height: calc(100% - 86px);
+            min-height: calc(100% - 154px);
             padding-top: 6rem;
 
             .header-title {
@@ -83,13 +85,13 @@ body {
 
     .footer {
         position: relative;
-        width: 100%;
         align-items: center;
         display: flex;
         justify-content: center;
         padding: 20px;
         background: $fc-black;
         color: $fc-white;
+        width: calc(100% - 40px);
     }
 }
 
@@ -113,4 +115,8 @@ h1 {
     font-size: 3rem;
     font-weight: bolder;
     text-align: center;
+}
+
+p {
+    margin: 0;
 }

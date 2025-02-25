@@ -1,0 +1,94 @@
+.product-detail-wrapper {
+    padding: 1rem;
+    .product-top-wrapper {
+        display: flex;
+        gap: 4rem;
+
+        .product-image {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            .MuiBox-root {
+                height: 450px;
+                width: 100%;
+                .MuiButtonBase-root {
+                    &.Mui-disabled {
+                        background: rgba(0, 0, 0, 0.5);
+                        svg {
+                            color: rgb(152 152 152);
+                        }
+                    }
+                    svg {
+                        height: 0.875rem;
+                        width: 0.875rem;                
+                    }
+                }
+            }
+        }
+
+        .product-content {
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            align-items: flex-start;
+            .add-quantity {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 50%;
+                button {
+                    border: 1px solid $fc-green;
+                    background-color: $fc-green;
+                    color: $fc-white;
+                    cursor: pointer;
+                    height: 2rem;
+                    width: 2rem;
+                    border-radius: 0.25rem;
+                    &:hover {
+                        border-color: $fc-hover-green;
+                        background-color: $fc-hover-green;
+                    }
+                    &:disabled {
+                        opacity: 0.5;
+                    }
+                }
+            }
+            .price {
+                .original-price {
+                    text-decoration: line-through;
+                    color: $fc-dark-gray;
+                    margin-left: 8px;
+                }
+            }
+            .brand {
+                text-transform: capitalize;
+            }
+            .description {
+                color: #808080;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .product-detail-wrapper {
+        .product-top-wrapper {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            .product-image {
+                width: 100%;
+                height: 400px;
+                .MuiBox-root {
+                    height: 400px;
+                }
+            }
+            .product-content {
+                width: 100%;
+                align-items: center;
+            }
+        }
+    }
+}

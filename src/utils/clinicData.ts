@@ -432,7 +432,7 @@ export const clinics = [
 
 export const productData = [
     {
-        id: "1",
+        itemId: "67b2c86db1975728e7fff0a1",
         "itemName": "Product 1",
         "sku": "ABC123",
         "price": {
@@ -458,9 +458,10 @@ export const productData = [
             "longitude": -74.006
         },
         "brand": "pedigree",
+        averageRating: 4.5,
         "category": "foods-and-accessories"
     },{
-        id: "2",
+        itemId: "67b2c86db1975728e7fff0a2",
         "itemName": "Product 2",
         "sku": "ABC12",
         "price": {
@@ -486,6 +487,7 @@ export const productData = [
             "latitude": 40.7128,
             "longitude": -74.006
         },
+        averageRating: 2.5,
         "brand": "pedigree",
         "category": "foods-and-accessories"
     }

@@ -28,6 +28,9 @@
                 box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
                 min-width: 300px;
                 flex-shrink: 0;
+                gap: 1rem;
+                display: flex;
+                flex-direction: column;
 
                 .clinic-image {
                     width: 100%;
@@ -38,9 +41,9 @@
 
                 h2 {
                     text-align: center;
-                    margin-bottom: 20px;
                     font-size: 2rem;
                     color: #333;
+                    margin: 0;
                 }
             }
         }
